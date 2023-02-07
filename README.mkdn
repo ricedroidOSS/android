@@ -113,10 +113,7 @@ Adapting System Properties for riceDroid
 # Camera
 
 # Exposing aux/camera privileges to OEM cameras
-# oem or certain common word that exists to oem camera package
-persist.camera.manufacturer=oneplus 
-# actual oem camera package
-persist.camera.oem.package=com.oneplus.camera 
+persist.sys.aux.camera_oem_package=com.oneplus.camera
 
 # Overriding camera id 
 # 1. Add depth sensor flag to Boardconfig.mk
@@ -134,9 +131,6 @@ TARGET_USES_MIUI_CAMERA := true
 
 # Increase/Reduce screen off blanking delay (default)
 persist.sys.screen.blank_delay=1000
-
-# Increase/Reduce screen wake up delay (default)
-persist.sys.screen.wakeup_delay=0
 
 # Performance
 
