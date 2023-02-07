@@ -14,7 +14,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-13.0.0_r24" />
+           revision="refs/tags/android-13.0.0_r30" />
 
   <remote  name="aosp_master"
            fetch="https://android.googlesource.com"
@@ -26,7 +26,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r24" />
+  <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r30" />
   <contactinfo bugurl="go/repo-bug" />
 
   <!-- AOSP Projects -->
