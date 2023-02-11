@@ -4,14 +4,12 @@
   <!-- crDroid Android repositories  -->
 
    <!-- external  -->
-  <project path="external/colorkt" name="crdroidandroid/android_external_colorkt" revision="13.0" />
   <project path="external/faceunlock" name="crdroidandroid/android_external_faceunlock" remote="gitlab" revision="13.0"/>
   <project path="external/fastrpc" name="crdroidandroid/android_external_fastrpc" groups="pdk" revision="13.0" />
   <project path="external/libjpeg-turbo" name="crdroidandroid/android_external_libjpeg-turbo" groups="pdk" revision="13.0" />
   <project path="external/libvpx" name="crdroidandroid/android_external_libvpx" groups="pdk" revision="13.0" />
   <project path="external/selinux" name="crdroidandroid/android_external_selinux" groups="pdk" revision="13.0" />
   <project path="external/setupcompat" name="crdroidandroid/android_external_setupcompat" groups="pdk" revision="13.0" />
-  <project path="external/themelib" name="crdroidandroid/android_external_themelib" revision="13.0" />
 
   <!-- hardware  -->
   <project path="hardware/lineage/interfaces" name="crdroidandroid/android_hardware_lineage_interfaces" revision="13.0" />

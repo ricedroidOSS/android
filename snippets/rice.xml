@@ -32,7 +32,6 @@
   <project path="device/qcom/sepolicy_vndr-legacy-um" name="ricedroidOSS/android_device_qcom_sepolicy_vndr-legacy-um" groups="qcom,lahaina" revision="thirteen" />
   
   <!-- External  -->
-  <project path="external/AndroidSystemBlur" name="ricedroidOSS/AndroidSystemBlur" revision="main" />
   <project path="external/arm-optimized-routines" name="ricedroidOSS/android_external_arm-optimized-routines" groups="pdk" revision="thirteen" />
   <project path="external/bouncycastle" name="ricedroidOSS/android_external_bouncycastle" groups="pdk" revision="thirteen" />
   <project path="external/erofs-utils" name="ricedroidOSS/android_external_erofs_utils" groups="pdk" revision="thirteen" />
