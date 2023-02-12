@@ -105,6 +105,7 @@
   <project path="system/bpf" name="ricedroidOSS/android_system_bpf" groups="pdk" revision="thirteen" />
   <project path="system/connectivity/wificond" name="ricedroidOSS/android_system_connectivity_wificond" groups="pdk" revision="thirteen" />
   <project path="system/core" name="ricedroidOSS/android_system_core" groups="pdk" revision="thirteen" />
+  <project path="system/extras" name="ricedroidOSS/android_system_extras" groups="pdk" revision="thirteen" />
   <project path="system/hardware/interfaces" name="ricedroidOSS/android_system_interfaces" groups="pdk" revision="thirteen" />
   <project path="system/libbase" name="ricedroidOSS/android_system_libbase" groups="pdk" revision="thirteen" />
   <project path="system/libhwbinder" name="ricedroidOSS/android_system_libhwbinder" groups="pdk" revision="thirteen" />
