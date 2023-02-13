@@ -126,7 +126,7 @@
   <project path="external/deqp-deps/glslang" name="platform/external/deqp-deps/glslang" groups="pdk-fs" remote="aosp" />
   <project path="external/desugar" name="platform/external/desugar" groups="pdk" remote="aosp" />
   <project path="external/dexmaker" name="platform/external/dexmaker" groups="pdk" remote="aosp" />
-  <project path="external/dlmalloc" name="platform/external/dlmalloc" groups="pdk" remote="aosp_master" revision="6d7299810bd5820d8d49cecb9f616b0dcfb010cd" />
+  <project path="external/dlmalloc" name="platform/external/dlmalloc" groups="pdk" remote="aosp" />
   <project path="external/dng_sdk" name="platform/external/dng_sdk" groups="pdk" remote="aosp" />
   <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="pdk" remote="aosp" />
   <project path="external/doclava" name="platform/external/doclava" groups="pdk" remote="aosp" />
