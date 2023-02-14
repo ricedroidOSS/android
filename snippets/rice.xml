@@ -57,6 +57,7 @@
   <project path="frameworks/libs/systemui" name="ricedroidOSS/android_frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
   <project path="frameworks/native" name="ricedroidOSS/android_frameworks_native" groups="pdk" revision="thirteen" />
   <project path="frameworks/opt/telephony" name="ricedroidOSS/android_frameworks_opt_telephony" groups="pdk" revision="thirteen"/>
+  <project path="frameworks/proto_logging" name="ricedroidOSS/android_frameworks_proto_logging" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
 
    <!-- Hardware -->
   <project path="hardware/interfaces" name="ricedroidOSS/android_hardware_interfaces" groups="pdk" revision="thirteen" />
