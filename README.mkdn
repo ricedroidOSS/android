@@ -110,80 +110,100 @@ TARGET_CORE_GMS_EXTRAS := true/false - extra packages for core build type (velve
 Adapting System Properties for riceDroid
 ---------------
 ```bash
+
+# Boost Framework & Memory management tuning
+
+# Increase/Reduce AOSP boostframework default boosting durations (int)
+persist.sys.powerhal.interaction.max
+
+# Increase/Reduce Scarlet boostframework system boost boosting durations (int)
+persist.sys.powerhal.interaction.max_boost 
+
+# Service Reschedule (boolean)
+persist.sys.am.reschedule_service
+
+# Maximum number of cached processes allowed. (int)
+persist.sys.fw.bg_apps_limit
+
+# Total memory capacity where memory trimming starts (int)
+persist.sys.fw.trim_enable_memory
+
+# Maximum number of phantom processes before the system starts trimming phantom processes. (int)
+persist.sys.fw.bg_phantom_proc_limit
+
 # Camera
 
-# Exposing aux/camera privileges to OEM cameras
-persist.sys.aux.camera_oem_package=com.oneplus.camera
+# Exposing aux/camera privileges to OEM cameras (string)
+persist.sys.aux.camera_oem_package
 
 # Overriding camera id 
 # 1. Add depth sensor flag to Boardconfig.mk
 TARGET_USES_DEPTHSENSOR_OVERRIDE := true
 
-# 2. Add camera id system property to device tree build properties
+# 2. Add camera id system property to device tree build properties (int)
 # desired camera id
-persist.sys.vendor.camera_override_id=20
+persist.sys.vendor.camera_override_id
 
 # Enabling MIUI camera mode support
 # Add miui camera flag to Boardconfig.mk
 TARGET_USES_MIUI_CAMERA := true
 
-# Display 
-
-# Increase/Reduce screen off blanking delay (default)
-persist.sys.screen.blank_delay=1000
-
-# Performance
-
-# Increase/Reduce AOSP boostframework default boosting durations  (default)
-persist.sys.powerhal.interaction.max=200
-
-# Increase/Reduce Scarlet boostframework system boost boosting durations (default)
-persist.sys.powerhal.interaction.max_boost=2000
-
-# Memory Management
-
-# Max cached app processes in system, overrides "config_customizedMaxCachedProcesses"
-# below properties are examples and were taken from oneplus 9R perfconfigstore.xml file
-persist.sys.fw.bg_apps_limit=96
-
 # Code linaro LMKD properties and its AOSP counterparts - refer to perfconfigstore.xml (if available) for tuning purposes
-# kill_heaviest_task_dup
-ro.lmk.kill_heaviest_task=true
-# kill_timeout_ms_dup
-ro.lmk.kill_timeout_ms=100
-# use_new_strategy_dup
-ro.lmk.use_new_strategy=true
-# thrashing_threshold
-ro.lmk.thrashing_limit=30
-# thrashing_decay
-ro.lmk.thrashing_limit_decay=5
-# nstrat_low_swap
-ro.lmk.swap_free_low_percentage=10
-# nstrat_psi_partial_ms
-ro.lmk.psi_partial_stall_ms=70
-# nstrat_psi_complete_ms
-ro.lmk.psi_complete_stall_ms=70
-# CLO lmkd [1] - others were not defined (will use default values from lmkd binary)
-ro.lmk.psi_scrit_complete_stall_ms=75
-ro.lmk.nstrat_wmark_boost_factor=4
-ro.lmk.enable_watermark_check=true
-ro.lmk.enable_userspace_lmk=true
-ro.lmk.super_critical=701
-ro.lmk.direct_reclaim_pressure=45
-ro.lmk.reclaim_scan_threshold=0
 
-# App compaction - refer to perfconfigstore.xml (if available) for tuning purposes
-persist.sys.appcompact.enable_app_compact=false
-persist.sys.appcompact.full_compact_type=2
-persist.sys.appcompact.some_compact_type=4
-persist.sys.appcompact.compact_throttle_somesome=5000
-persist.sys.appcompact.compact_throttle_somefull=10000
-persist.sys.appcompact.compact_throttle_fullsome=500
-persist.sys.appcompact.compact_throttle_fullfull=10000
-persist.sys.appcompact.compact_throttle_bfgs=600000
-persist.sys.appcompact.compact_throttle_persistent=600000
-persist.sys.appcompact.rss_throttle_kb=12000
-persist.sys.appcompact.delta_rss_throttle_kb=8000
+# kill_heaviest_task_dup (boolean)
+ro.lmk.kill_heaviest_task
+
+# kill_timeout_ms_dup (int)
+ro.lmk.kill_timeout_ms
+
+# use_new_strategy_dup (boolean)
+ro.lmk.use_new_strategy
+
+# thrashing_threshold (int)
+ro.lmk.thrashing_limit
+
+# thrashing_decay (int)
+ro.lmk.thrashing_limit_decay
+
+# nstrat_low_swap (int)
+ro.lmk.swap_free_low_percentage
+
+# nstrat_psi_partial_ms (int)
+ro.lmk.psi_partial_stall_ms
+
+# nstrat_psi_complete_ms (int)
+ro.lmk.psi_complete_stall_ms
+
+# forcefully enable use_inkernel_interface (boolean)
+ro.vendor.lmk.force_inkernel_lmk
+
+# enable userspace lmkd (boolean)
+ro.lmk.enable_userspace_lmk
+
+# QTI ULMK properties (no AOSP counterpart)
+
+# watermark check (boolean)
+ro.lmk.enable_watermark_check
+
+# others (int)
+ro.lmk.psi_scrit_complete_stall_ms
+ro.lmk.nstrat_wmark_boost_factor
+ro.lmk.super_critical
+ro.lmk.direct_reclaim_pressure
+ro.lmk.reclaim_scan_threshold
+
+# App compaction properties
+persist.sys.appcompact.enable_app_compact
+persist.sys.appcompact.full_compact_type
+persist.sys.appcompact.some_compact_type
+persist.sys.appcompact.compact_throttle_somesome
+persist.sys.appcompact.compact_throttle_somefull
+persist.sys.appcompact.compact_throttle_fullsome
+persist.sys.appcompact.compact_throttle_fullfull
+persist.sys.appcompact.compact_throttle_bfgs
+persist.sys.appcompact.compact_throttle_persistent
+persist.sys.appcompact.rss_throttle_kb
+persist.sys.appcompact.delta_rss_throttle_kb
 ```
 
 System Boot Changes
@@ -225,24 +245,25 @@ brunch "device_codename"
 
 Credits
 ---------------
-* [**AOSPA**](https://github.com/AOSPA)
-* [**AICP**](https://github.com/AICP)
+* [**Android Ice Cold Project**](https://github.com/AICP)
 * [**Bootleggers**](https://github.com/BootleggersROM)
 * [**crDroid**](https://github.com/crdroidandroid)
 * [**Corvus-AOSP**](https://github.com/Corvus-R)
 * [**Derpfest**](https://github.com/Derpfest-12)
 * [**DotOS**](https://github.com/DotOS)
-* [**Evolution-X**](https://github.com/Evolution-X)
-* [**Flamingo-OS**](https://github.com/Flamingo-OS)
-* [**LineageOS**](https://github.com/LineageOS)
-* [**Octavi-OS**](https://github.com/Octavi-OS)
+* [**Evolution X**](https://github.com/Evolution-X)
+* [**Flamingo OS**](https://github.com/Flamingo-OS)
+* [**Libre Mobile OS**](https://github.com/LMODroid)
+* [**Lineage OS**](https://github.com/LineageOS)
+* [**Octavi OS**](https://github.com/Octavi-OS)
 * [**Omnirom**](https://github.com/omnirom)
+* [**Paranoid Android**](https://github.com/AOSPA)
 * [**PixelDust Caf**](https://github.com/pixeldust-project-caf)
-* [**Project-Fluid**](https://github.com/Project-Fluid)
+* [**Project Fluid**](https://github.com/Project-Fluid)
 * [**Project Kaleidoscope**](https://github.com/Project-Kaleidoscope)
 * [**Project Radiant**](https://github.com/ProjectRadiant)
-* [**SparkOS**](https://github.com/Spark-Rom)
-* [**StagOS**](https://github.com/StagOS)
-* [**Xdroid-OSS**](https://github.com/xdroid-oss)
+* [**Spark OS**](https://github.com/Spark-Rom)
+* [**Stag OS**](https://github.com/StagOS)
+* [**Xdroid OSS**](https://github.com/xdroid-oss)
 
 
