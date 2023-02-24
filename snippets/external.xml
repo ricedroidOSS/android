@@ -5,7 +5,6 @@
 
    <!-- external  -->
   <project path="external/faceunlock" name="crdroidandroid/android_external_faceunlock" remote="gitlab" revision="13.0"/>
-  <project path="external/fastrpc" name="crdroidandroid/android_external_fastrpc" groups="pdk" revision="13.0" />
   <project path="external/libjpeg-turbo" name="crdroidandroid/android_external_libjpeg-turbo" groups="pdk" revision="13.0" />
   <project path="external/libvpx" name="crdroidandroid/android_external_libvpx" groups="pdk" revision="13.0" />
   <project path="external/selinux" name="crdroidandroid/android_external_selinux" groups="pdk" revision="13.0" />

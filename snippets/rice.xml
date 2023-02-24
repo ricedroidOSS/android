@@ -36,6 +36,7 @@
   <project path="external/bouncycastle" name="ricedroidOSS/android_external_bouncycastle" groups="pdk" revision="thirteen" />
   <project path="external/conscrypt" name="ricedroidOSS/android_external_conscrypt" groups="pdk" revision="thirteen" />
   <project path="external/erofs-utils" name="ricedroidOSS/android_external_erofs_utils" groups="pdk" revision="thirteen" />
+  <project path="external/fastrpc" name="ricedroidOSS/android_external_fastrpc" groups="pdk" revision="thirteen" />
   <project path="external/f2fs-tools" name="ricedroidOSS/android_external_f2fs-tools" groups="pdk" revision="thirteen" />
   <project path="external/flatbuffers" name="ricedroidOSS/android_external_flatbuffers" groups="pdk" revision="thirteen" />
   <project path="external/freetype" name="ricedroidOSS/android_external_freetype" groups="pdk" revision="thirteen" />
