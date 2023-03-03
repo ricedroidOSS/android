@@ -61,6 +61,7 @@
   <project path="frameworks/proto_logging" name="ricedroidOSS/android_frameworks_proto_logging" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
 
    <!-- Hardware -->
+  <project path="hardware/google/pixel-sepolicy" name="ricedroidOSS/android_hardware_google_pixel-sepolicy" revision="thirteen" groups="generic_fs,pixel" />
   <project path="hardware/interfaces" name="ricedroidOSS/android_hardware_interfaces" groups="pdk" revision="thirteen" />
   <project path="hardware/qcom-caf/sm8250/audio" name="ricedroidOSS/android_hardware_qcom_audio_sm8250" groups="qcom" revision="thirteen" />
   <project path="hardware/qcom-caf/sm8250/media" name="ricedroidOSS/android_hardware_qcom_media_sm8250" groups="qcom,kona" revision="thirteen" />
@@ -128,7 +129,7 @@
 
   <!-- Vendor -->
   <project path="vendor/addons" name="ricedroidOSS/android_vendor_addons" revision="thirteen" />
-  <project path="vendor/gms" name="dlwlrma123/vendor_google_pixel" remote="gitlab" revision="thirteen" clone-depth="1" />
+  <project path="vendor/gms" name="minaripenguin/vendor_google_pixel" remote="gitlab" revision="thirteen" clone-depth="1" />
   <project path="vendor/lineage" name="ricedroidOSS/android_vendor_rice" revision="thirteen" />
   <project path="vendor/riceOTA" name="riceDroidOSS-devices/android_vendor_RiceDroidOTA" revision="thirteen" />
   
