@@ -61,6 +61,7 @@
   <project path="frameworks/proto_logging" name="ricedroidOSS/android_frameworks_proto_logging" groups="pdk-cw-fs,pdk-fs" revision="thirteen" />
 
    <!-- Hardware -->
+  <project path="hardware/google/camera" name="ricedroidOSS/android_hardware_google_camera" groups="pdk" revision="thirteen" />
   <project path="hardware/google/pixel-sepolicy" name="ricedroidOSS/android_hardware_google_pixel-sepolicy" revision="thirteen" groups="generic_fs,pixel" />
   <project path="hardware/interfaces" name="ricedroidOSS/android_hardware_interfaces" groups="pdk" revision="thirteen" />
   <project path="hardware/qcom-caf/sm8250/audio" name="ricedroidOSS/android_hardware_qcom_audio_sm8250" groups="qcom" revision="thirteen" />
