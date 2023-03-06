@@ -197,27 +197,9 @@ persist.sys.appcompact.delta_rss_throttle_kb
 System Boot Changes
 ---------------
 ```bash
-# Kernel-side fs-verity support was remove as per revision v8.6, 
-# certain fs-verity related changes must be adapted to boot riceDroid on your Device
-
-# Enable apk-fs-verity
+# Just in case, to avoid conflict with kernel-less fs-verity setup
+# builders may want to enable apk-fs-verity
 ro.apk_verity.mode=2
-
-# Required Apex Changes  - credits to eun0115
-# Remove updatable apex make
-# 1. remove this line if it exists on your device tree makefiles.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
-# 2. Set ro.apex.updatable to false.
-# Disable updatable apex
-ro.apex.updatable=false
-
-# 3. Enable flatten apex - add to your device tree makefiles.
-OVERRIDE_TARGET_FLATTEN_APEX := true
-
-or
-
-export OVERRIDE_TARGET_FLATTEN_APEX=true
 ```
 
 Build
