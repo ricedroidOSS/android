@@ -24,9 +24,6 @@
   <project path="packages/apps/SimpleDeviceConfig" name="crdroidandroid/android_packages_apps_SimpleDeviceConfig" revision="13.0" />
   
   <!-- vendor nxp  -->
-  <project path="vendor/nxp/nfc" name="crdroidandroid/android_vendor_nxp_nfc" revision="13.0" />
-  <project path="vendor/nxp/secure_element" name="crdroidandroid/android_vendor_nxp_secure_element" revision="13.0" />
-  <project path="vendor/nxp/secure_element_extns" name="crdroidandroid/android_vendor_nxp_secure_element_extns" revision="13.0" />
   <project path="vendor/nxp/opensource/interfaces/nfc" name="crdroidandroid/android_vendor_nxp_interfaces_opensource_nfc" revision="13.0" />
   <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="crdroidandroid/android_vendor_nxp_opensource_external_libnfc-nci" revision="13.0" />
   <project path="vendor/nxp/opensource/commonsys/frameworks" name="crdroidandroid/android_vendor_nxp_opensource_frameworks" revision="13.0" />
