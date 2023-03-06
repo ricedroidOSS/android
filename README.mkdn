@@ -136,18 +136,6 @@ persist.sys.fw.bg_phantom_proc_limit
 # Exposing aux/camera privileges to OEM cameras (string)
 persist.sys.aux.camera_oem_package
 
-# Overriding camera id 
-# 1. Add depth sensor flag to Boardconfig.mk
-TARGET_USES_DEPTHSENSOR_OVERRIDE := true
-
-# 2. Add camera id system property to device tree build properties (int)
-# desired camera id
-persist.sys.vendor.camera_override_id
-
-# Enabling MIUI camera mode support
-# Add miui camera flag to Boardconfig.mk
-TARGET_USES_MIUI_CAMERA := true
-
 # Code linaro LMKD properties and its AOSP counterparts - refer to perfconfigstore.xml (if available) for tuning purposes
 
 # kill_heaviest_task_dup (boolean)
